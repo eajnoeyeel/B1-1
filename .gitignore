@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# OMC agent state
+.omc/
+
+# Internal working notes (not part of the deliverable)
+HANDOFF.md
+MISSION.md

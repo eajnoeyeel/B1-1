@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+  <title>Lorem Ipsum | Portfolio</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 첫 페인트 전에 테마를 적용해 깜빡임을 막기 위해 defer 없이 head에서 실행 -->
+  <script src="js/theme-init.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="주요 메뉴">
+      <a class="nav__logo" href="#hero">LI<span>.</span></a>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" type="button" aria-label="다크 모드로 전환" aria-pressed="false">
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        </button>
+        <button class="nav__toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__bar"></span><span class="nav__bar"></span><span class="nav__bar"></span>
+        </button>
+      </div>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">Hello!</p>
+        <h1 class="hero__title" id="hero-title">
+          안녕하세요, <strong>이연재</strong>입니다.
+        </h1>
+        <p class="hero__typing" aria-live="polite">
+          <span class="typing__text" data-typing="Lorem ipsum dolor sit amet.|Consectetur adipiscing elit.|Sed do eiusmod tempor.|Ut labore et dolore magna.">Lorem ipsum dolor sit amet.</span><span class="typing__cursor" aria-hidden="true">|</span>
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="about-title">About Me</h2>
+        <div class="about reveal">
+          <img class="about__photo" src="images/profile.svg" alt="프로필 일러스트" width="220" height="220">
+          <div class="about__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+            <ul class="about__facts">
+              <li><span>Lorem</span>Ipsum dolor sit amet</li>
+              <li><span>Dolor</span>Consectetur adipiscing elit</li>
+              <li><span>Amet</span>Sed do eiusmod tempor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="skills-title">Skills</h2>
+        <div class="skills">
+          <article class="skill-group reveal">
+            <h3>AI 품질 평가</h3>
+            <ul class="tags">
+              <li>LLM-as-a-Judge</li><li>Langfuse</li><li>RAGAS</li><li>A/B 테스트</li><li>QA 시나리오 설계</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal">
+            <h3>데이터 분석</h3>
+            <ul class="tags">
+              <li>SQL (OLAP)</li><li>Python</li><li>로그 분석</li><li>에러 유형화</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Web</h3>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>REST API</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Tools</h3>
+            <ul class="tags">
+              <li>Git</li><li>GitHub</li><li>n8n</li><li>Claude Code</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="projects-title">Projects</h2>
+        <p class="section__desc reveal">GitHub API로 불러온 저장소 목록입니다.</p>
+        <div class="filters" role="group" aria-label="언어별 필터"></div>
+        <div class="projects" aria-live="polite" aria-busy="true"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="contact-title">Contact</h2>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+            <p class="form-error" id="name-error" aria-live="polite"></p>
+          </div>
+          <div class="form-field">
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+            <p class="form-error" id="email-error" aria-live="polite"></p>
+          </div>
+          <div class="form-field">
+            <label for="message">메시지</label>
+            <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+            <p class="form-error" id="message-error" aria-live="polite"></p>
+          </div>
+          <button class="btn btn--primary form-submit" type="submit">Send</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>&copy; <span class="footer__year">2026</span> Lorem Ipsum. All rights reserved.</p>
+      <ul class="footer__social">
+        <li><a href="https://github.com/eajnoeyeel" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:hello@example.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="scroll-top" type="button" aria-label="맨 위로 이동">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+</body>
+</html>
